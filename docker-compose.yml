@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+
+# run: docker compose up
+# Rebuilding: docker compose up --build --force-recreate --no-deps web
+# stop: docker compose down
