@@ -7,6 +7,6 @@ def validate_name(value):
         raise ValidationError("Must not be empty or blank")
 
 
-def validate_price(value):
+def validate_number(value):
     if value <= 0:
         raise ValidationError("Must be greater than zero")
