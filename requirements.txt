@@ -4,3 +4,7 @@ python-dotenv
 sqlalchemy
 flask-sqlalchemy
 psycopg2
+PyJWT
+flask-jwt-extended
+passlib
+flask-migrate

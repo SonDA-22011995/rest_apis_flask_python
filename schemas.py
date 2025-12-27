@@ -57,3 +57,7 @@ class ItemUpdateSchema(AtLeastOneFieldSchema):
     price = fields.Float(validate=validate_number)
     store_id = fields.Int(validate=validate_number)
 
+class UserSchema(Schema):
+    id = fields.Int(dump_only=True)
+    username = fields.Str(required=True)
+    password = fields.Str(required=True, load_only=True)
